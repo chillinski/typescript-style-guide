@@ -24,14 +24,14 @@ const streetAddress = "221B Baker Street";
 
 Convert types with global objects instead of shorthands (``String(foo)`` over ``'' + foo``). Add types to a module instead of polluting the global namespace with every interface.
 
-Use ``number[]`` over ``Array<number>``.
+Use ``Array<number>`` over ``number[]``.
 
 Use ``let`` over ``var`` to have better scoping. Use ``const`` for variables which are not re-assigned.
 
 Formatting
 ----------
 
-Indent with 4 spaces. Always use curly braces and add semicolons. Add a new line for each property in an object. Use the literal syntax of objects, arrays and regular expressions. Use the dot notation for property access. Remove whitespace at the end of lines (including empty lines). End the file with a newline character. Don't have consecutive empty lines.
+Indent with *2* spaces. Always use curly braces and add semicolons. Add a new line for each property in an object. Use the literal syntax of objects, arrays and regular expressions. Use the dot notation for property access. Remove whitespace at the end of lines (including empty lines). End the file with a newline character. Don't have consecutive empty lines.
 
 ```TypeScript
 let myObject = {
@@ -45,7 +45,7 @@ Separate operators and variables with spaces unless it's an unary operator. Add 
 let area = length * width;
 ```
 
-Don't combine multiple var, let or const statements together. Use ``"`` for strings, ``'`` for strings within strings.
+Don't combine multiple var, let or const statements together. Use ``"`` for strings, ``'`` for strings within strings. If you need multiline strings and/or interpolation, use Template Strings. `` `Hello, ${user}, welcome to the show` ``
 
 ```TypeScript
 const foo = require("foo");
@@ -63,7 +63,7 @@ Add a space after the colon ``:`` character, but not before it.
 let myVariable: string;
 ```
 
-Lines should be at most 140 characters long.
+Lines should be at most 80 characters long.
 
 Naming
 ------
