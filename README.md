@@ -11,7 +11,7 @@ This guide optimizes for readability and maintainability over performance. It in
 ```TypeScript
 // myDocument type is not obvious to the reader
 getFromDatabase.done((myDocument: DocumentType) => {
-    response(myDocument);
+  response(myDocument);
 });
 
 // Type of streetAddress is clear
@@ -39,9 +39,9 @@ Place else in the same line as the ending curly brace, always use curly braces a
 
 ```TypeScript
 if (isAuthorized) {
-    response();
+  response();
 } else {
-    // Not authorized..
+  // Not authorized..
 }
 ```
 
@@ -58,10 +58,10 @@ if (isAuthorized) {
 
 ```TypeScript
 let myObject = {
-    foo:                        bar,
-    longerFoo:                  true,
-    evenLongerFoo:              "fooValue",
-    "this-key-needs-quotation": 2
+  foo:                        bar,
+  longerFoo:                  true,
+  evenLongerFoo:              "fooValue",
+  "this-key-needs-quotation": 2
 };
 ```
 
@@ -127,7 +127,7 @@ const area = π * r * r;
  * @returns {Q.Promise<DocumentType>}
  */
 const getLatestDocument = (id: string) => {
-    // ... implementation here
+  // ... implementation here
 };
 ```
 
@@ -161,7 +161,7 @@ commands.filter(authorizedCommand).forEach(executeCommand);
 const squaredValues = values.map(value => value * value);
 
 const printValues = (values: number[]) => {
-    console.log(JSON.stringify(values));
+  console.log(JSON.stringify(values));
 };
 ```
 
