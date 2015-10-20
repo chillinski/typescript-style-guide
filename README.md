@@ -6,7 +6,8 @@ This guide optimizes for readability and maintainability over performance. It in
 
 * Enable noImplicitAny option the compiler. [[link](https://www.stevefenton.co.uk/2013/07/typescript-no-implicit-any-compiler-flag/)]
 * Avoid using the ``any`` type
-* Add type information when the inference is not clear.  * Specify function's return type if it's not clear from the implementation.
+* Add type information when the inference is not clear.  
+* Specify function's return type if it's not clear from the implementation.
 
 ```TypeScript
 // myDocument type is not obvious to the reader
