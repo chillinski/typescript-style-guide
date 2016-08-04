@@ -88,7 +88,7 @@ const PI   = 3.14;
 * Use ``'`` for strings within strings
 * Use Template Strings `` ` `` when you need interpolation and/or multiline strings. [[link](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/template_strings)]
 
-````TypeScript
+```TypeScript
 `Hello, ${user}, welcome to the show
 this is an awesome eveing
 and we could talk the whole time.`
@@ -105,7 +105,7 @@ Don't use leading or trailing commas.
 
 ```TypeScript
 let myVariable: string;
-``
+```
 
 ## Comments
 
