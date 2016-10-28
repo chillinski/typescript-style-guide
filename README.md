@@ -171,6 +171,11 @@ const printValues = (values: number[]) => {
 * Always use the strict equality comparision ``===`` and ``!==`` over ``==`` and ``!=``. [[link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)]
 * Use implicit boolean type coercion only for checking truthiness.
 
+## Write custom definition file
+
+* The naming convention is __*.d.ts__. Thus we can omit the file ending when importing from it.
+
+
 Further reading, inspiration and sources
 ----------------------------------------
 
@@ -179,3 +184,4 @@ Further reading, inspiration and sources
 3. https://github.com/Platypi/style_typescript
 4. https://github.com/Microsoft/TypeScript/wiki/Coding-guidelines
 5. http://stackoverflow.com/questions/762011/javascript-let-keyword-vs-var-keyword
+6. https://www.typescriptlang.org/docs/release-notes/typescript-2.0.html
