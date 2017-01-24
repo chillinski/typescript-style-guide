@@ -76,6 +76,7 @@ let myObject = {
 * Only have one assignment per line
 * Align the equal signs when having several assignments in each line
 * Single letter names should only be used when the domain calls for it, e.g. mathematics. Names may include special characters (e.g. ε) if the domain calls for it.
+* Don't use magic numbers - extract them to constants and give them a name so your fellow developer friends know what's their purpose
 
 ```TypeScript
 let length = someUserInput();
