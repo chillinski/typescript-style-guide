@@ -22,7 +22,7 @@ const streetAddress = "221B Baker Street";
 * Convert types with global objects instead of shorthands (``String(foo)`` over ``'' + foo``). [[link](http://www.w3schools.com/js/js_type_conversion.asp)]
 * Add types to a module instead of polluting the global namespace with every interface.
 * Use ``Array<number>`` over ``number[]`` as we use that syntax in our API documentation
-* Don't start interfaces with the letter I.
+* Start interfaces with the letter I.
 * Use [domain-driven](http://en.wikipedia.org/wiki/Domain-driven_design) naming. Abbrevations should almost never be used, but also avoid overtly long names.
 
 ## Formatting
