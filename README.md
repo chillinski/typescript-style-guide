@@ -46,6 +46,30 @@ if (isAuthorized) {
 }
 ```
 
+### Imports
+* Split imports into 2 separate blocks. The first lists all the external dependencies (mostly coming from npm modules). The second block lists all internal symbols.
+* Each symbol within one import is put to a new line with a trailing comma at the end of the line.
+* Use barrels (index.ts) in subdirectories of your project to group exports and to simplify the imports.
+* Create non-instantiated modules (aka. Ghost Modules) to group new interfaces and types. This shall be used to avoid polluting the global namespace with many interfaces. [[link](http://definitelytyped.org/guides/best-practices.html)]
+```TypeScript
+import {
+  NgModule,
+} from "@angular/core";
+import {
+  RouterModule,
+  Routes,
+} from "@angular/router";
+
+import {
+  DetailComponent,
+  EditorComponent,
+  ListComponent,
+} from "./components/views";
+
+// module definition
+
+```
+
 ### Objects and Classes
 
 * Add a new line for each property in an object.
@@ -186,3 +210,4 @@ Further reading, inspiration and sources
 4. https://github.com/Microsoft/TypeScript/wiki/Coding-guidelines
 5. http://stackoverflow.com/questions/762011/javascript-let-keyword-vs-var-keyword
 6. https://www.typescriptlang.org/docs/release-notes/typescript-2.0.html
+7. http://definitelytyped.org/guides/best-practices.html
